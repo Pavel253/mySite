@@ -1,0 +1,87 @@
+@import "../../variable.scss";
+
+.skills__me {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .title__h2 {
+    padding-bottom: 60px;
+  }
+
+  .container__skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: $whiteCr;
+      margin-bottom: 30px;
+    }
+
+    .title__h3 {
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .skill__active {
+      margin-bottom: 18px;
+      animation-name: animated;
+      animation-duration: 1s;
+
+      height: 40px;
+      .span {
+        display: none;
+        width: 570px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .skill__active.active {
+      transition: all 1s ease;
+      height: 100%;
+      .span {
+        animation-name: animated;
+        animation-duration: 1s;
+        display: block;
+        width: 570px;
+      }
+    }
+  }
+}
+
+@keyframes animated {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 10px;
+    font-size: 0;
+  }
+  1% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+    font-size: 16;
+  }
+}
+
+@keyframes lines {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+  }
+}
