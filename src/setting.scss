@@ -7,7 +7,11 @@ body {
   width: 1360px;
 }
 
-
+h1, h2, h3, h4 h5, h6, span__btn, span, p, a, li, ul {
+  font-family: Lato; 
+  font-style: normal; 
+  line-height: normal; 
+}
 
 * {
   padding: 0;

@@ -4,13 +4,24 @@ import "./Footer.scss";
 import Logo from "../Logo/Logo";
 
 const Footer = () => {
+
+  const handleClickPhone = () => {
+    window.location.href = 'tel:89157020675';
+  }
+
+
+  const handleClickEmail = () => {
+    window.location.href = 'mailto:hubmaileryb@mail.ru?subject=тема_сообщения&body=текст_сообщения';
+  };
+
+
   return (
     <footer className="footer">
       <div className="container">
         <h2 className="title__h2">Оставайтесь на связи</h2>
         <div className="footer__flex">
-          <span className="phone footer__tt">+7 915 702 06 75</span>
-          <span className="mail footer__tt">hubmaileryb@mail.ru</span>
+          <span className="phone footer__tt" onClick={handleClickPhone}>+7 915 702 06 75</span>
+          <span className="mail footer__tt" onClick={handleClickEmail}>hubmaileryb@mail.ru</span>
           <div className="logo__tt">
             <h5 className="title__h5">
               Баги есть повсюду. Давайте их вместе исправим!
