@@ -2,7 +2,7 @@
 @import './fonts/stylesheet.scss';
 
 .title__h2 {
-  font-family: Lato;
+  font-family: Ubuntu;
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
@@ -12,9 +12,13 @@
   color: $whiteCr;
 }
 
+p, span, button {
+  font-family: Ubuntu;
+
+}
 .title__h3 {
   color: $whiteCr;
-  font-family: Lato;
+  font-family: Ubuntu;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -25,7 +29,7 @@
 
 .span {
   color: $whiteCr;
-  font-family: Lato;
+  font-family: Ubuntu;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

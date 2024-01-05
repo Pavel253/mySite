@@ -1,7 +1,41 @@
 .works {
-  padding-top:  120px;
-  .title__h2 {
-    padding-bottom: 40px;
-    
+  padding-top: 120px;
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      'a a'
+      'c c';
+
+    width: 1260px;
+    margin: 0 auto;
+
+    .container__items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      grid-area: a;
+      padding-bottom: 40px;
+      width: 1260px;
+
+      .title__h2 {}
+
+      .btn__link-work {
+        font-family: Ubuntu;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #fff;
+        background: linear-gradient(101deg, #7B4DFF -51.36%, #B04DFF 89.58%);
+        padding: 17px 40px;
+        border-radius: 20px;
+      }
+    }
+
+    .container__portfolio {
+      grid-area: c;
+      width: 1260px;
+    }
   }
 }

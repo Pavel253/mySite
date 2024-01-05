@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 120px;
+
   .title__h2 {
     padding-bottom: 55px;
   }
@@ -17,7 +18,7 @@
 
     .footer__tt {
       color: $whiteCr;
-      font-family: Lato;
+      font-family: Ubuntu;
       font-size: 22px;
       font-style: normal;
       font-weight: 600;
@@ -35,8 +36,8 @@
       .title__h5 {
         padding-bottom: 18px;
         color: $whiteCr;
-        font-family: Lato;
-        font-size: 15px;
+        font-family: Ubuntu;
+        font-size: 14px;
         font-style: italic;
         font-weight: 400;
         line-height: 130%;
@@ -54,7 +55,7 @@
 
     .span {
       color: #FFF;
-      font-family: Lato;
+      font-family: Ubuntu;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -72,5 +73,91 @@
       background-color: #fff;
       border-radius: 20px;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .title__h2 {
+      padding-bottom: 40px;
+    }
+
+    .footer__flex {
+      display: grid;
+      grid-template-areas:
+        "a b"
+        'c c';
+
+      .phone {
+        grid-area: a;
+        font-size: 18px;
+      }
+
+      .main {
+        grid-area: b;
+      }
+
+      .footer__tt {
+        font-size: 18px;
+
+      }
+
+      .logo__tt {
+        padding-top: 20px;
+        grid-area: c;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .title__h5 {
+          width: 240px;
+        }
+      }
+    }
+
+    .bottom__footer {
+      padding-top: 40px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 568px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .title__h2 {
+      font-size: 23px;
+    }
+    .footer__flex {
+      .footer__tt {
+        font-size: 14px;
+      }
+
+      .logo__tt {
+        .title__h5 {
+          width: 170px;
+          padding-bottom: 0px;
+        }
+      }
+    }
+
+    .bottom__footer .flex__mes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100px;
+      padding: 5px 6px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+  }
+
+  .logo .logo__span {
+    display: none;
   }
 }

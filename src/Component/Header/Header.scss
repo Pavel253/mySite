@@ -8,9 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .logo {
       display: flex;
       align-items: center;
+      z-index: 5;
 
       .logo__span {
         display: flex;
@@ -24,7 +26,7 @@
 
         span {
           color: #fff;
-          font-family: Lato;
+          font-family: Ubuntu;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -44,7 +46,7 @@
         list-style-type: none;
         cursor: pointer;
         color: #fff;
-        font-family: Lato;
+        font-family: Ubuntu;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -53,5 +55,129 @@
         text-transform: capitalize;
       }
     }
+
+    .navigation__two {
+      display: none;
+
+    }
+
+    .burger__menu {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 15px;
+    transition: all 0.3s;
+
+    .container {
+
+      .navigation {
+        display: none;
+      }
+
+      .burger__menu {
+        display: block;
+        width: 34px;
+        height: 28px;
+        position: relative;
+        cursor: pointer;
+        z-index: 5;
+        transition: all 0.5s;
+
+        .line {
+          transition: all 0.5s;
+
+          width: 34px;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          background-color: #fff;
+        }
+
+        .line:nth-child(1) {
+          top: 0;
+        }
+
+        .line:nth-child(2) {
+          top: 12px;
+        }
+
+        .line:nth-child(3) {
+          bottom: 0;
+        }
+      }
+
+      .burger__menu.active {
+        transition: all 0.5s;
+
+        .line:nth-child(1) {
+          top: 13px;
+          transform: rotate(45deg);
+          transition: all 0.5s;
+        }
+
+        .line:nth-child(2) {
+          transition: all 0.5s;
+          opacity: 0;
+        }
+
+        .line:nth-child(3) {
+          transition: all 0.5s;
+          top: 13px;
+          transform: rotate(135deg);
+        }
+      }
+
+      .navigation__two {
+        display: flex;
+        height: 200px;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.6s;
+        background-color: #0000008f;
+        top: -220px;
+        left: 0;
+        width: 100%;
+        z-index: 0;
+        
+        li {
+          z-index: 100;
+          list-style-type: none;
+          cursor: pointer;
+          color: #fff;
+          font-family: Ubuntu;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 3.92px;
+          text-transform: capitalize;
+          padding-bottom: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+        }
+      }
+
+      .navigation__two.active {
+        top: 0;
+        transition: all 0.6s;
+      }
+    }
+  }
+
+  .header.active {
+    padding-bottom: 100px;
+    transition: all 0.6s;
+  }
+
+  .header .container .logo .logo__span {
+    display: none;
   }
 }

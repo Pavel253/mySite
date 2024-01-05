@@ -1,6 +1,9 @@
 import React from "react";
+
 import '../../variable.scss'
 import "./AboutMe.scss";
+
+import img from '../../Img/фон.jpg'
 
 const AboutMe = () => {
   return (
@@ -15,6 +18,7 @@ const AboutMe = () => {
             специализируюсь в создании сайта так frontend так и backend части
           </p>
         </div>
+        <img src={img} alt="" />
       </div>
     </section>
   );

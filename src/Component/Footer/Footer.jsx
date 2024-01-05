@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Footer.scss";
 import Logo from "../Logo/Logo";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -26,7 +27,9 @@ const Footer = () => {
             <h5 className="title__h5">
               Баги есть повсюду. Давайте их вместе исправим!
             </h5>
-            <Logo />
+            <Link to='/'>
+              <Logo />
+            </Link>
           </div>
         </div>
         <div className="bottom__footer">

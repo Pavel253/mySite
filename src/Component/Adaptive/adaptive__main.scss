@@ -1,0 +1,291 @@
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 1200px;
+  }
+
+  .about__me .container img {
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 920px;
+  }
+
+  .title__h2 {
+    font-size: 32px;
+  }
+
+  .title__h3 {
+    font-size: 20px;
+  }
+
+  .span {
+    font-size: 15px;
+  }
+
+  .about__me .container {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    img {
+      margin-left: 0px;
+    }
+
+    .about__me-text {
+      padding-bottom: 30px;
+    }
+  }
+
+  .works .container {
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "c c";
+    width: 920px;
+    margin: 0 auto;
+
+    .container__items {
+      width: 920px;
+    }
+
+    .container__portfolio {
+      width: 835px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .title__h2 {
+    font-size: 27px;
+  }
+
+  .title__h3 {
+    font-size: 18px;
+  }
+
+  .about__me {
+    padding-top: 80px;
+  }
+
+  .skills__me {
+    padding-top: 80px;
+
+    .title__h2 {
+      padding-bottom: 40px;
+    }
+
+    .container__skill {
+      .line {
+        margin-bottom: 20px;
+      }
+
+      .skill__active {
+        margin-bottom: 10px;
+      }
+
+      .span {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .works {
+    padding-top: 80px;
+
+    .container {
+      width: 720px;
+
+      .container__items {
+        width: 720px;
+
+        .btn__link-work {
+          font-size: 17px;
+          padding: 13px 30px;
+        }
+      }
+
+      .container__portfolio {
+        width: 720px;
+
+        .card {
+          width: 340px;
+          height: 440px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 520px;
+  }
+
+  .about__me {
+    padding-top: 60px;
+
+    .container img {
+      width: 520px;
+      height: 480px;
+      border-radius: 15px;
+    }
+
+    .about__me-text {
+      .text {
+        width: 446px;
+        color: #fff;
+        font-family: Ubuntu;
+        font-size: 14px;
+      }
+
+      .title {
+        padding-bottom: 20px;
+        font-size: 34px;
+      }
+    }
+  }
+
+
+  .skills__me .container__skill .skill__active {
+    height: 30px;
+
+    .span {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+
+
+  .skills__me .container__skill .skill__active.active {
+    .span {
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+
+  .works {
+    padding-top: 60px;
+
+    .container {
+      width: 520px;
+
+      .container__items {
+        width: 520px;
+        padding-bottom: 30px;
+      }
+
+      .container__portfolio {
+        width: 520px;
+
+        .card {
+          width: 245px;
+          height: 340px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+
+  .container {
+    width: 340px;
+  }
+
+  .title__h2 {
+    font-style: 22px;
+  }
+
+  .title__h3 {
+    font-size: 15px;
+  }
+
+  .about__me {
+    padding-top: 40px;
+    .about__me-text {
+      .title {
+        padding-bottom: 15px;
+        font-size: 29px;
+      }
+
+      .text {
+        width: 300px;
+      }
+    }
+
+    .container img {
+      width: 340px;
+      height: 340px;
+      border-radius: 15px;
+    }
+  }
+
+  .skills__me {
+    padding-top: 40px;
+
+    .title__h2 {
+      padding-bottom: 30px;
+    }
+
+    .container__skill {
+      .line {
+        margin-bottom: 10px;
+      }
+
+      .skill__active {
+        height: 20px;
+      }
+      .skill__active.active .span {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .works {
+    padding-top: 40px;
+
+    .container {
+      width: 340px;
+
+      .container__items {
+        width: 340px;
+        padding-bottom: 20px;
+
+        .btn__link-work {
+          font-size: 14px;
+          padding: 10px 25px;
+
+        }
+      }
+
+      .title__h2 {
+        font-size: 22px;
+      }
+
+      .container__portfolio {
+        width: 340px;
+
+        .card {
+          width: 340px;
+          height: 440px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 360px) {}

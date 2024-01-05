@@ -5,14 +5,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 640px;
+      height: 640px;
+      border-radius: 20px;
+    }
+  }
   .about__me-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     .title {
-      font-family: Lato;
+      font-family: Ubuntu;
       font-size: 50px;
       font-style: normal;
       font-weight: 600;
@@ -24,7 +33,7 @@
     .text {
       width: 526px; 
       color: $whiteCr;
-      font-family: Lato;
+      font-family: Ubuntu;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;

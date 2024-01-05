@@ -1,0 +1,183 @@
+@media screen and (max-width: 1600px) {
+
+  .container {
+    width: 1200px;
+  }
+
+  .portfolio .container .container__card {
+    width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+
+  .card {
+    width: 390px;
+  }
+
+  .footer {
+    padding-top: 100px;
+
+  }
+}
+
+@media screen and (max-width: 1300px) {
+
+  .container {
+    width: 920px;
+  }
+
+  .portfolio .container {
+    width: 920px;
+
+    .btn {
+      font-size: 15px;
+    }
+
+    .container__card {
+      width: 920px;
+      grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
+
+      .card {
+        width: 290px;
+        height: 340px;
+
+        .project-portfolio {
+          .modal__portfolio .modal__btn .span__site {
+            overflow: hidden;
+            height: 60px;
+            padding: 10px;
+          }
+
+          .modal__main {
+            top: 20px;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 80px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .container {
+    width: 720px;
+  }
+
+  .portfolio {
+    padding-top: 50px;
+
+    .container {
+      width: 720px;
+
+      .container__card {
+        width: 720px;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+        .card {
+          width: 345px;
+
+          .project-portfolio .modal__portfolio .modal__btn .span__site {
+            overflow: hidden;
+            height: 60px;
+            padding: 14px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 520px;
+  }
+
+  .portfolio {
+    padding-top: 50px;
+
+    .container {
+      width: 520px;
+
+      .container__card {
+        width: 520px;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        grid-gap: 1rem;
+
+        .card {
+          width: 480px;
+          height: 300px;
+
+          .project-portfolio .modal__portfolio {
+            .modal__btn {
+              .span__site {
+                overflow: hidden;
+                height: 60px;
+                padding: 20px;
+                width: 230px;
+              }
+
+              .btn {
+                padding: 5px 30px;
+              }
+
+              .modal__main {
+                top: 20px;
+                left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 568px) {
+
+  .container {
+    width: 340px;
+  }
+
+  .portfolio {
+    padding-top: 50px;
+
+    .container {
+      width: 340px;
+
+      .container__card {
+        width: 340px;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+        .card {
+          width: 340px;
+          height: 240px;
+
+        }
+
+        .card:nth-child(4) {
+          .project-portfolio .img {
+            top: -120px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 40px;
+  }
+
+}
