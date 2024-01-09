@@ -7,21 +7,16 @@ import '../../Adaptive/adaptive__portfolio.scss';
 
 import { Link } from 'react-router-dom';
 
+import { motion } from 'framer-motion'
+
 const Portfolio = ({ data, setData }) => {
 
-  const handleClick = (itemId) => {
-    setData((prevItems) => {
-      return prevItems.map((item) => {
-        if (item.id === itemId) {
-          return { ...item, className: item.className ? "" : "active" };
-        }
-        return item;
-      });
-    });
-  };
-
   return (
-    <main className='portfolio'>
+    <motion.main 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className='portfolio'>
       <section>
         <div className="container">
           <Link to='/'>
@@ -31,12 +26,12 @@ const Portfolio = ({ data, setData }) => {
           </Link>
           <div className="container__card">
             {data.map((item) => (
-              <Card handleClick={handleClick} data={item} setData={setData} />
+              <Card data={item} setData={setData} />
             ))}
           </div>
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

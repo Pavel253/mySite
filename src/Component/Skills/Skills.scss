@@ -32,56 +32,61 @@
       margin-bottom: 18px;
       animation-name: animated;
       animation-duration: 1s;
-
       height: 40px;
+      width: 100%;
+
+      .container__tt {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 20px;
+        transition: all 1s;
+      }
+
       .span {
-        display: none;
         width: 570px;
         margin-bottom: 10px;
+        opacity: 0;
+        height: 10px;
+        font-size: 0;
+        transition: all 1s;
+      }
+
+      .img {
+
+        opacity: 0;
+        height: 0px;
+        width: 400px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        transition: all 1s;
       }
     }
 
     .skill__active.active {
       transition: all 1s ease;
       height: 100%;
-      .span {
-        animation-name: animated;
-        animation-duration: 1s;
-        display: block;
+
+      .container__tt {
+        height: 230px;
+        transition: all 1s;
+      }
+
+      .span.active {
+        transition: all 1s;
+        opacity: 1;
         width: 570px;
+        height: auto;
+        font-size: 16px;
+      }
+
+      .img.active {
+        transition: all 2s;
+
+        opacity: 1;
+        height: 220px;
+        width: 400px;
       }
     }
-  }
-}
-
-@keyframes animated {
-  0% {
-    display: none;
-    opacity: 0;
-    height: 10px;
-    font-size: 0;
-  }
-  1% {
-    opacity: 0;
-    display: block;
-  }
-  100% {
-    opacity: 1;
-    height: auto;
-    font-size: 16;
-  }
-}
-
-@keyframes lines {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    opacity: 0;
-    display: block;
-  }
-  100% {
-    opacity: 1;
   }
 }

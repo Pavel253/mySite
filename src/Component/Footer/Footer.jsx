@@ -15,19 +15,29 @@ const Footer = () => {
     window.location.href = 'mailto:hubmaileryb@mail.ru?subject=тема_сообщения&body=текст_сообщения';
   };
 
+  const onclickVk = () => {
+    window.open(`https://vk.com/pavitves`, "_blank");
+  }
+  const onclicTg = () => {
+    window.open(`https://t.me/Pusha_azure`, "_blank");
+  }
+  const onclickWp = () => {
+    window.open(`https://api.whatsapp.com/send?phone=89157020675`, "_blank");
+  }
+
 
   return (
     <footer className="footer">
       <div className="container">
         <h2 className="title__h2">Оставайтесь на связи</h2>
         <div className="footer__flex">
-          <span className="phone footer__tt" onClick={handleClickPhone}>+7 915 702 06 75</span>
-          <span className="mail footer__tt" onClick={handleClickEmail}>hubmaileryb@mail.ru</span>
-          <div className="logo__tt">
+          <span className="phone footer__tt" style={{ userSelect: 'none' }} onClick={handleClickPhone}>+7 915 702 06 75</span>
+          <span className="mail footer__tt" style={{ userSelect: 'none' }} onClick={handleClickEmail}>hubmaileryb@mail.ru</span>
+          <div className="logo__tt" >
             <h5 className="title__h5">
               Баги есть повсюду. Давайте их вместе исправим!
             </h5>
-            <Link to='/'>
+            <Link to='/' style={{ userSelect: 'none' }}>
               <Logo />
             </Link>
           </div>
@@ -35,7 +45,7 @@ const Footer = () => {
         <div className="bottom__footer">
           <span className="span">2024 права защищены</span>
           <div className="flex__mes">
-            <svg viewBox="0 0 24 24" width="24" height="24">
+            <svg onClick={onclickVk} viewBox="0 0 24 24" width="24" height="24">
               <g>
                 <path d="M22.316,1.684C20.632,0,17.921,0,12.5,0h-1C6.079,0,3.368,0,1.684,1.684C0,3.368,0,6.079,0,11.5v1   c0,5.421,0,8.131,1.684,9.816S6.079,24,11.5,24h1c5.421,0,8.131,0,9.816-1.684C24,20.632,24,17.921,24,12.5v-1   C24,6.079,24,3.368,22.316,1.684z M19.503,17h-1.75c-0.667,0-0.863-0.532-2.05-1.719c-1.039-1.001-1.484-1.131-1.743-1.131   c-0.353,0-0.458,0.1-0.458,0.6v1.569c0,0.43-0.137,0.681-1.25,0.681c-1.854,0-3.892-1.126-5.339-3.202   c-2.17-3.041-2.763-5.34-2.763-5.803c0-0.26,0.1-0.495,0.6-0.495h1.751c0.447,0,0.615,0.196,0.783,0.68   c0.856,2.493,2.3,4.672,2.893,4.672c0.222,0,0.324-0.103,0.324-0.667V9.608c-0.065-1.186-0.696-1.284-0.696-1.706   c0-0.195,0.167-0.402,0.445-0.402h2.751c0.371,0,0.5,0.198,0.5,0.643v3.467c0,0.37,0.161,0.5,0.272,0.5   c0.223,0,0.408-0.13,0.816-0.538c1.261-1.409,2.151-3.578,2.151-3.578c0.112-0.26,0.316-0.495,0.762-0.495h1.75   c0.529,0,0.641,0.272,0.529,0.643c-0.223,1.02-2.355,4.023-2.355,4.023c-0.186,0.297-0.26,0.445,0,0.779   c0.186,0.26,0.797,0.779,1.205,1.261c0.752,0.846,1.319,1.559,1.477,2.051C20.254,16.75,20.003,17,19.503,17z" />
               </g>
@@ -45,12 +55,14 @@ const Footer = () => {
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
+              onClick={onclicTg}
             >
               <g id="Telegram">
                 <path d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
               </g>
             </svg>
             <svg
+            onClick={onclickWp}
               viewBox="0 0 512 512"
               width="24"
               height="24"

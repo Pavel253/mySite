@@ -1,19 +1,24 @@
 import React from 'react';
+import '../Adaptive/adaptive__main.scss'
 
 import AboutMe from '../AboutMe/AboutMe';
 import Skills from '../Skills/Skills';
 import Works from '../Works/Works';
 
-import '../Adaptive/adaptive__main.scss'
 
+import { motion } from 'framer-motion'
 
-const Main = () => {
+const Main = ({ data, setData }) => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <AboutMe />
       <Skills />
-      <Works />
-    </main>
+      <Works data={data} setData={setData} />
+    </motion.main>
   );
 };
 

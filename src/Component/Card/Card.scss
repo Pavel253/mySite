@@ -440,7 +440,7 @@
   }
 }
 
-.card.active:nth-child(1),
+.card:nth-child(1).active,
 .card:hover:nth-child(1) {
   .span__btn {
     background-color: #a118f0;

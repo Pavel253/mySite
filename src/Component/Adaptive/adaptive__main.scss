@@ -42,6 +42,12 @@
     }
   }
 
+
+  .skills__me .container__skill .skill__active.active .span {
+    width: 480px;
+  }
+
+
   .works .container {
     display: grid;
     grid-template-areas:
@@ -99,6 +105,17 @@
       }
     }
   }
+
+  .skills__me .container__skill .skill__active.active .img {
+    height: 170px;
+    width: 340px;
+
+    .container__tt {
+      height: 240px;
+      transition: all 1s;
+    }
+  }
+
 
   .works {
     padding-top: 80px;
@@ -162,17 +179,28 @@
 
     .span {
       width: 100%;
-      font-size: 13px;
+      font-size: 5px;
     }
   }
 
 
   .skills__me .container__skill .skill__active.active {
-    .span {
+    .container__tt {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .span.active {
       width: 100%;
-      font-size: 13px;
+      font-size: 15px;
+    }
+
+    .img {
+      display: none;
     }
   }
+
+
 
   .works {
     padding-top: 60px;
@@ -207,12 +235,21 @@
     font-style: 22px;
   }
 
+  .about__me .about__me-text .btn__link-work {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 12px;
+  }
+
   .title__h3 {
     font-size: 15px;
   }
 
   .about__me {
     padding-top: 40px;
+
     .about__me-text {
       .title {
         padding-bottom: 15px;
@@ -246,6 +283,7 @@
       .skill__active {
         height: 20px;
       }
+
       .skill__active.active .span {
         width: 100%;
         font-size: 12px;
@@ -279,7 +317,7 @@
 
         .card {
           width: 340px;
-          height: 440px;
+          height: 340px;
         }
       }
     }

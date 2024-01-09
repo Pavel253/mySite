@@ -25,6 +25,7 @@
       line-height: normal;
       letter-spacing: 0.66px;
       text-transform: uppercase;
+      cursor: pointer;
     }
 
     .logo__tt {
@@ -72,6 +73,10 @@
       padding: 10px 14px;
       background-color: #fff;
       border-radius: 20px;
+
+      svg {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -130,9 +135,11 @@
   .footer {
     padding-top: 40px;
     padding-bottom: 40px;
+
     .title__h2 {
       font-size: 23px;
     }
+
     .footer__flex {
       .footer__tt {
         font-size: 14px;

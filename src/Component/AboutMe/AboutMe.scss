@@ -40,5 +40,18 @@
       line-height: 135%; 
       letter-spacing: 0.48px; 
     }
+
+    .btn__link-work {
+      margin-top: 20px;
+      font-family: Ubuntu;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: #fff;
+      background: linear-gradient(101deg, #7B4DFF -51.36%, #B04DFF 89.58%);
+      padding: 17px 40px;
+      border-radius: 20px;
+    }
   }
 }
